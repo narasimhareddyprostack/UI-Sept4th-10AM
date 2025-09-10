@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Validation Attributes:</title>
+    </head>
+    <body>
+        <h3>Registration Form-Data Validations</h3>
+        <form action="/reg">
+            <label>User Name:</label>
+            <input type="text" required/> <br>
+            
+            <label >Mobile No::</label>
+            <input type="text" pattern="[6-9][0-9]{9}" required placeholder="Pls Enter 10 Digit Mobile"/> <br>
+            
+            <label >Country 1:::</label>
+            <input type="text" required value="India" readonly/> <br>
+            
+             <label >Country 2:::</label>
+            <input type="text" required value="Nepal" disabled/> <br>
+            <input type="submit" value="Registration">
+        </form>
+
+    </body>
+</html>
