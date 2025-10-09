@@ -3,25 +3,80 @@
         <link rel="stylesheet" href="./bs.css">
     </head>
     <body>
-       <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-        <a href="./index.html" class="navbar-brand">Logo</a>
-        <div class="ml-auto">
-            <ul class="navbar-nav">
-                <li><a href="./index.html" class="nav-link">Home</a></li>
-                <li><a href="./about.html" class="nav-link">About</a></li>
-                <li><a href="./services.html" class="nav-link">Services</a></li>
-                <li><a href="./employees.html" class="nav-link">Employees</a></li>
-                <li><a href="./products.html" class="nav-link">Products</a></li>
-                <li><a href="./Contact.html" class="nav-link">Contact</a></li>
-                <li><a href="./Login.html" class="nav-link">Login</a></li>
-            </ul>
-        </div>
-       </nav>
-       <hr>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+    <a href="./index.html" class="navbar-brand">Logo</a>
+    <div class="ml-auto">
+        <ul class="navbar-nav">
+            <li><a href="./index.html" class="nav-link">Home</a></li>
+            <li><a href="./about.html" class="nav-link">About</a></li>
+            <li><a href="./services.html" class="nav-link">Services</a></li>
+            <li><a href="./employees.html" class="nav-link">Employees</a></li>
+            <li><a href="./products.html" class="nav-link">Products</a></li>
+            <li><a href="./Contact.html" class="nav-link">Contact</a></li>
+            <li><a href="./Login.html" class="nav-link">Login</a></li>
+        </ul>
+    </div>
+    </nav>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Contact</li>
+        </ol>
+    </nav>
     <div class="container">
         <div class="row">
             <div class="col-6">
                 <!-- Contact Form -->
+                 <form action="./contact">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" class="form-control"/>
+                            </div>
+                        </div>
+                         <div class="col-4">
+                            <div class="form-group">
+                                <label>Email Id</label>
+                                <input type="text" class="form-control"/>
+                            </div>
+                        </div>
+                         <div class="col-4">
+                            <div class="form-group">
+                                <label>Mobile</label>
+                                <input type="text" class="form-control"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="form-group">
+                                <label >Message</label>
+                                <input type="text" class="form-control"/>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-group">
+                                <label>Services</label>
+                                <select class="form-control">
+                                    <option >Pleaes Select</option>
+                                    <option >Web Development</option>
+                                    <option >Mobile App</option>
+                                    <option >Cloud</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                       <div class="col">
+                         <div class="form-group">
+                            <label >Message</label>
+                            <textarea class="form-control"  rows="4"></textarea>
+                        </div>
+                       </div>
+                    </div>
+                    <input type="submit" value="Submit Comment" class="btn btn-warning">
+                 </form>
             </div>
             <div class="col-6">
                 <!-- Google map -->
